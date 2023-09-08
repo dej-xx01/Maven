@@ -1,0 +1,633 @@
+@font-face {
+    font-family: neuemontreal;
+    src: url(NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: pp;
+    src: url(PPNeueBit-Bold.otf);
+}
+
+@font-face {
+    font-family: neuebit;
+    src: url(NeueBit-Regular.ttf);
+}
+@font-face {
+    font-family: neuebit-medium;
+    src: url(NeueMontreal-Medium.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: neuemontreal;
+}
+body{
+    overflow-x: hidden;
+}
+.top{
+    margin: 0.4rem 0.8rem;
+}
+marquee{
+    background-color: #EDEEF0;
+    padding: 0.15rem;
+    border-radius: 100vw;
+    text-transform: uppercase;
+    
+}
+span img{
+    width: 0.78rem;
+    height: 0.68rem;
+    margin: 0 0.8rem;
+
+}
+marquee p{
+    font-size: 0.72rem;
+    display: inline;
+    font-weight: normal;
+    color: rgba(29, 29, 29, 0.80);
+    letter-spacing: 0.38px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.63px;
+    padding: 0 2.8rem;
+    align-items: center;
+}
+#menu-bar{
+    width: 1rem;
+    margin-top: 3px;
+}
+#box-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.nav-logo{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: 3px;
+}
+.box{
+    flex: 1;
+}
+.one, .two{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+}
+.two{
+    justify-content: right;
+}
+
+li a{
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 0.85rem;
+    font-weight: 500;
+
+}
+.section-one{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0.85rem 0;
+}
+.text-box{
+    border-top: 1px solid rgba(29, 29, 29, 0.12);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.image-box{
+    flex: 1.3;
+    background-image: url("model-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 64%;
+}
+.text-box{
+    flex: 1;
+    padding: 0 2.5rem;
+}
+.inner-box{
+    flex: 1;
+    padding-bottom: 2rem;
+}
+.inner-box>h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: neuebit-medium;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+#new-drop{
+    font-family: pp;
+    font-size: 4rem;
+}
+#num{
+    color: rgba(29, 29, 29, 0.50);
+    /* before - no font-size */
+    font-size: 3rem;
+}
+#down{
+    float: right;
+    color: #1D1D1D;
+    background: none;
+    border: 0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    position: relative;
+}
+
+#down::after{
+    content: url("arrow-down.png");
+    position: absolute;
+    right: -1.2rem;
+}
+
+#shop-coll, #see-cat{
+    border-radius: 2.43163rem;
+    background: #1D1D1D;
+    color: white;
+    padding: 0.38906rem 0.85rem;
+    border: 0;
+    font-size: 0.7rem;
+    transition: transform 0.5s;
+
+}
+#shop-coll:hover, #see-cat:hover{
+    transform: translateY(-5px);
+}
+.section-two{
+    padding: 4rem 2.8rem;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.sec-two-img{
+    height: 33rem;
+
+}
+.sec-two-img-text p{
+    color: #1D1D1D;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.02625rem;
+
+}
+.sec-two-img>img{
+    width: 100%;
+    height: 70vh;
+}
+.sec-two-img-text a{
+    color: rgba(29, 29, 29, 0.64);
+    text-decoration: none;
+    font-size: 0.80rem;
+}
+.sec-two-img>p{
+    color: #1D1D1D;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: -0.02625rem;
+
+}
+.cat-btn{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.section-three{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.sec-three-box-one, .sec-three-box-two{
+    flex: 1;
+}
+.sec-three-box-one img{
+    width: 100%;
+    height: 100%;
+}
+.sec-three-box-two{
+    background: #1D1D1D;
+    border-left: 1px solid grey;
+}
+
+.center-logo{
+    display: flex;
+    justify-content: center;
+}
+#center-logo-one{
+    margin-top: 4rem;
+}
+
+.sec-three-text{
+    margin-top: 16.5rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.sec-three-text>p{
+    color: white;
+    font-size: 2.42rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -0.05625rem;
+}
+#ab-us{
+    background-color: white;
+    color: #1D1D1D;
+    padding: 0.4rem 1rem;
+    border: 0;
+    margin-top: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 100vw;
+    font-size: 0.68rem;
+    letter-spacing: -0.025rem;
+}
+.section-four{
+    height: 90vh;
+    padding: 2rem 0;
+
+}
+.sec-four-img{
+    height: 70vh;
+    width: 100%;
+    background-image: url("imagery.jpg");
+    background-position-x: 45%;
+    background-position-y: center;
+    position: relative;
+}
+.sec-four-box{
+    max-width: 30%;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(40px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem 1.5rem;
+    border-radius: 0.25rem;
+    /*text-align: center;*/
+
+}
+.sec-four-box>h2{
+    font-weight: normal;
+    color: #1D1D1D;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+.sec-four-box>input{
+    width: 70%;
+    height: 2rem;
+    border-radius: 100vw;
+    border: 1px solid #1D1D1D;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    outline: none;
+
+}
+.sec-four-box>input::placeholder{
+    color: rgba(29, 29, 29, 0.72);
+    font-size: 0.8rem;
+}
+.sec-four-box>button{
+    border: 1.5px solid #1D1D1D;
+    background-color: transparent;
+    width: 25%;
+    height: 2rem;
+    border-radius: 100vw;
+    position: relative;
+}
+button{
+    cursor: pointer;
+}
+.sec-four-box>button:hover{
+    border: 1px solid white;
+}
+.sec-four-box>p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.86rem;
+    letter-spacing: 0.04rem;
+}
+.section-four>img{
+    width: 6rem;
+    margin: 7rem 50%;
+    margin-bottom: 0;
+}
+.section-five{
+    
+}
+.sec-five-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16.5rem;
+    padding: 9rem 2.8rem;
+}
+.sec-five-box>h4{
+    font-weight: 500;
+    color: #1D1D1D;
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+}
+.sec-five-box>ul{
+    list-style: none;
+}
+.sec-five-box li{
+    margin-bottom: 0.2rem;
+}
+.sec-five-box a{
+    font-weight: normal;
+    font-size: 0.83rem;
+    color: rgba(29, 29, 29, 0.64);
+    letter-spacing: 0.02rem;
+    
+}
+.sec-five-box img{
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+.footer-bottom{
+    position: relative;
+    height: 40vh;
+}
+#all, #outerwear, #tshirts, #polos, #shirts, #sweatshirts, #leather, #denims{
+    border: 0.5rem solid black;
+    font-size: 5.5rem;
+    font-size: 7.5rem;
+    border-radius: 100vw;
+    padding: 0 0.7rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    font-family: pp;
+    line-height: 4.3rem;
+}
+#all, #outerwear, #tshirts, #polos, #shirts{
+    bottom: 8rem;
+}
+#sweatshirts, #leather, #denims{
+    bottom: 0;
+}
+#leather{
+    left: 37.5rem;
+}
+#denims{
+    right: 10px;
+}
+#shirts{
+    bottom: 9rem;
+    right: 1rem;
+    transform: rotate(19deg);
+}
+#polos{
+    bottom: 6.3rem;
+    right: 18rem;
+}
+#tshirts{
+    bottom: 10rem;
+    right: 28rem;
+    transform: rotate(-23deg);
+}
+#outerwear{
+    bottom: 11.5rem;
+    left: 15rem;
+    transform: rotate(-25deg);
+}
+#all{
+    left: 2rem;
+    padding: 0 2rem;
+    letter-spacing: 0.123rem;
+    transform: rotate(33deg);
+}
+.ptc{
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-between;
+   background: #EDEEF0;
+   border-radius: 6.25rem;
+   margin: 1rem;
+   padding: 0.5rem;
+}
+.ptc>ul{
+    list-style: none;
+}
+.ptc>ul>li{
+    display: inline-block;
+}
+
+@media (max-width:600px){
+    .section-three{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .section-two{
+        padding: 2rem 0rem;
+    }
+    .sec-two-img{
+        height: 35rem;
+    
+    }
+    .sec-two-img>img{
+        width: 100%;
+        height: 80%;
+    }
+    .sec-three-box-two{
+        background: #1D1D1D;
+        border-left: 1px solid grey;
+    }
+    .sec-three-box-two img{
+        width: 15rem;
+    }
+    .sec-five-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 9rem 1rem;
+    }
+    .sec-two-img-text{
+        padding: 0 0.5rem;
+    }
+    .cat-btn{
+        margin-top: 0rem;
+    }
+    #ab-us{
+        margin: 2rem 0;
+    }
+    .section-two>p{
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .sec-four-box{
+        max-width: 90%;
+        padding: 4rem 1rem;
+    }
+    .sec-four-box input{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .sec-four-box p{
+        line-height: 1.1rem;
+    }
+    .sec-four-box button{
+        display: block;
+        width: fit-content;
+        padding: 0.2rem 1.3rem;
+        font-size: 0.89rem;
+        margin: 0 auto;
+    }
+    .sec-four-img{
+        background-position-x: 15%;
+        background-position-y: center;
+    }
+
+    #all, #outerwear, #tshirts, #polos, #shirts, #sweatshirts, #leather, #denims{
+        font-size: 1.3rem;
+    }
+
+    .section-one{
+        display: block;
+        background-image: url(model-one.png);
+        background-position-x: 40%;
+        background-position-y: 68%;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 0.5rem;
+    }
+    .box{
+        
+    }
+    #box-two{
+        order: -1;
+    }
+    .one{
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    .two{
+        order: 2;
+    }
+    #menu-bar{
+        position: absolute;
+        right: 2rem;
+        top: 0.5rem;
+    }
+    .one, .two{
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+    .reveal{
+        display: block;
+    }
+    .image-box{
+        display: none;
+    }
+    .text-box{
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .inner-box{
+        /* before - margin: 25rem 3rem */
+        margin: 25rem 1rem;
+        padding-bottom: 0;
+        
+    }
+    .inner-box>h1{
+        font-size: 2.3rem;
+        font-weight: 500;
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    .inner-box span{
+        color: rgba(29, 29, 29, 0.50);
+    }
+    #down{
+        float: right;
+        color: #1D1D1D;
+        background: none;
+        border: 0;
+        font-size: 0.75rem;
+        font-weight: 400;
+        position: relative;
+    }
+    
+    #down::after{
+        content: url("arrow-down.png");
+        position: absolute;
+        right: -1.2rem;
+    }
+
+    .inner-box>h1{
+        color: black;
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.16);
+    }
+    #new-drop, #num{
+        color: white;
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.16);
+    }
+
+
+    #all, #outerwear, #tshirts, #polos, #shirts, #sweatshirts, #leather, #denims{
+        border: 0.5rem solid black;
+        font-size: 2.5rem;
+        border-radius: 100vw;
+        padding: 0 0.7rem;
+        padding-bottom: 0.5rem;
+        position: absolute;
+        font-family: pp;
+        line-height: 2rem;
+    }
+    #denims{
+        right: 2px;
+    }
+    #sweatshirts{
+        left: 8px;
+    }
+    #all{
+        bottom: 4rem;
+        left: 0.5rem;
+    }
+    #shirts{
+        bottom: 4rem;
+    }
+    #polos{
+        bottom: 4rem;
+        right: 9.2rem;
+    }
+    #outerwear{
+        bottom: 9.3rem;
+        left: 4rem;
+    }
+}
