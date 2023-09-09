@@ -12,6 +12,7 @@ subBtn.addEventListener("click", function(){
 })
 
 let secTwo = document.querySelector(".img-container")
+let secc = document.querySelector(".img-container-two")
 const filterBtn = document.querySelector("#filter-btn")
 let inputEl = document.querySelector("#input-el")
 const menu = [
@@ -52,16 +53,34 @@ const menu = [
         price: 6000
     }
 ]
+const menuTwo = [
+    {
+        itemName: "Cotton Sweatshirt",
+        itemPrice: "$250",
+        itemImage: "image 15.jpg"
+    },
+    {
+        itemName: "Chelsea Ankle Boot",
+        itemPrice: "$98",
+        itemImage: "image 12.jpg"
+    },
+    {
+        itemName: "Scarf",
+        itemPrice: "$18",
+        itemImage: "image 14.jpg"
+    }
+]
 window.addEventListener("DOMContentLoaded", e => {
-    setUp()
+    setUpOne()
+    setUpTwo()
 })
 
-function setUp(){
+function setUpOne(){
     let displayMenu = menu.map(function(item){
         return `
-        <div class="sec-two-img">
+        <div class="img-container-box">
             <img src="${item.image}" alt="">
-            <div class="sec-two-img-text">
+            <div class="img-container-text">
                 <p>${item.product}</p>
                 <p><a href="#">${item.link}</a></p>
             </div>
@@ -70,4 +89,20 @@ function setUp(){
     })
     displayMenu = displayMenu.join("")
     secTwo.innerHTML = displayMenu
+}
+
+function setUpTwo(){
+    let mappedMenuTwo = menuTwo.map(menuTwoItem =>{
+        return `
+        <div class="img-container-box">
+        <img src="${menuTwoItem.itemImage}" alt="">
+        <div class="img-container-text">
+            <p>${menuTwoItem.itemName}</p>
+            <p><a href="#">${menuTwoItem.itemPrice}</a></p>
+        </div>
+    </div>
+        `
+    })
+    mappedMenuTwo = mappedMenuTwo.join("")
+    secc.innerHTML = mappedMenuTwo
 }
