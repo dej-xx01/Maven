@@ -177,27 +177,27 @@ li a{
     gap: 2rem;
     margin-top: 2rem;
 }
-.sec-two-img{
+.img-container-box{
     height: 33rem;
 
 }
-.sec-two-img-text p{
+.img-container-text p{
     color: #1D1D1D;
     font-weight: 500;
     font-size: 1.1rem;
     letter-spacing: -0.02625rem;
 
 }
-.sec-two-img>img{
+.img-container-box>img{
     width: 100%;
     height: 70vh;
 }
-.sec-two-img-text a{
+.img-container-text a{
     color: rgba(29, 29, 29, 0.64);
     text-decoration: none;
     font-size: 0.80rem;
 }
-.sec-two-img>p{
+.img-container-box>p{
     color: #1D1D1D;
     font-weight: 500;
     font-size: 1.2rem;
@@ -445,11 +445,11 @@ button{
     .section-two{
         padding: 2rem 0rem;
     }
-    .sec-two-img{
+    .img-container-box{
         height: 35rem;
     
     }
-    .sec-two-img>img{
+    .img-container-box>img{
         width: 100%;
         height: 80%;
     }
@@ -466,7 +466,7 @@ button{
         gap: 1rem;
         padding: 9rem 1rem;
     }
-    .sec-two-img-text{
+    .img-container-text{
         padding: 0 0.5rem;
     }
     .cat-btn{
@@ -629,5 +629,9 @@ button{
     #outerwear{
         bottom: 9.3rem;
         left: 4rem;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 }
