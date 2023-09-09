@@ -634,4 +634,18 @@ button{
     body{
         overflow-x: hidden;
     }
+
+        .ptc{
+        flex-direction: column; 
+        justify-content: space-between;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.5rem;
+        gap: 0.3rem;
+     }
+     .ptc a{
+        text-decoration: underline;
+        margin-right: 0.4rem;
+     }
 }
