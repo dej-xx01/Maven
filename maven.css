@@ -648,4 +648,7 @@ button{
         text-decoration: underline;
         margin-right: 0.4rem;
      }
+    .sec-four-box{
+        width: 80%;
+     }
 }
